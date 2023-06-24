@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "awc",
+	"version": "${version}",
+	"name": "Auto Whack A Creeper",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"WiseWarWolf"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/awc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.wisewarwolf.awc.AWCMod"
+		],
+		"client": [
+			"com.wisewarwolf.awc.AWCModClient"
+		],
+		"fabric-datagen": [
+			"com.wisewarwolf.awc.AWCModDataGenerator"
+		]
+	},
+	"mixins": [
+		"awc.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
